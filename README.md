@@ -4,6 +4,12 @@ This project is an exploration of YouTube trending videos to examine some of the
 
 This readme focuses specially on the [date and month analysis of trending videos](https://github.com/amstqq/trending_videos_analysis/blob/master/data_analysis/date_analysis.ipynb), which is the topic I spent most time on.
 
+## Navigation
+- data_analysis folder contains all jupyter notebooks used to process data and create visulizations.
+- data_gathering_cleaning folder contains jupyter notebooks used to clean the data and perform API calls to collect information about popular Youtube videos
+- photos folder contains all visualizations.
+- trending_data_csv contains cleaned version of kaggle dataset.
+
 ## Data Cleaning and Processing
 - Videos with NAN video_id and title are filtered out
 - category_id, views, likes, dislikes, comment_count columns have their data type changed from object to numeric
