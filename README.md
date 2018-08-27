@@ -1,17 +1,20 @@
-# youtube_project
+# Youtube Trending Videos Analysis
 
-## Summary ##
+This project is an exploration of YouTube trending videos to examine some of the factors that impact whether a video trends. The data included a list of daily trending videos in the United States from November 2017 through June 2018. [Click here](https://www.kaggle.com/datasnaek/youtube-new) to find the dataset on Kaggle. A processed version of the data can also be found [here](https://github.com/amstqq/trending_videos_analysis/blob/master/trending_data_csv/popular_videos.csv).
 
-This project is an exploration of YouTube trending videos to examine some of the factors that impact whether a video trends. The data included a list of daily trending videos in the United States from November 2017 through June 2018. Here is a link to the dataset which we found on Kaggle.
+This readme focuses specially on the [date and month analysis of trending videos](https://github.com/amstqq/trending_videos_analysis/blob/master/data_analysis/date_analysis.ipynb), which is the topic I spent most time on.
 
-https://www.kaggle.com/datasnaek/youtube-new
+## Data Cleaning and Processing
+- Videos with NAN video_id and title are filtered out
+- category_id, views, likes, dislikes, comment_count columns have their data type changed from object to numeric
 
-## Data Cleaning ##
+### Dealing with Duplicates
 
+A list of trending videos from Youtube are appended to the dataset daily. As a result, if a video stays trending for more than one day, it will be appended to the dataset multiple times.
 
-https://docs.google.com/presentation/d/1Zz3tMyjvQufpL28Xpg46TWHZx77IytMGPCK1t1HwYm8/edit
+When calculating the number of days it takes for a video to beocome trending after it is published, if a video has duplicates, only the video with the earliest trending_date is kept as this date indicates the first time the video becomes trending. All other duplicates are removed. Then, the difference in days  between trending_date and publish_date is calculated
 
-We used Python libraries pandas and Matplotlib to examine a number of questions broken down by video categories including: total views, average views, likes and dislikes, and sentiment by category.
+When calculating the number of days a video stays trending, duplicates are kept as the simply the number of duplicates indicates the number of trending days.
 
 ## Findings ##
 
