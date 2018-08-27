@@ -2,7 +2,7 @@
 
 This project is an exploration of YouTube trending videos to examine some of the factors that impact whether a video trends. The data included a list of daily trending videos in the United States from November 2017 through June 2018. [Click here](https://www.kaggle.com/datasnaek/youtube-new) to find the dataset on Kaggle. A processed version of the data can also be found [here](https://github.com/amstqq/trending_videos_analysis/blob/master/trending_data_csv/popular_videos.csv).
 
-This readme focuses specially on the [date and month analysis of trending videos](https://github.com/amstqq/trending_videos_analysis/blob/master/data_analysis/date_analysis.ipynb), which is the topic I spent most time on.
+This readme focuses specially on the [date and month analysis of trending videos](https://github.com/amstqq/trending_videos_analysis/blob/master/data_analysis/date_analysis.ipynb), which is the topic I spent most time on. Please refer to [this google slides link](https://docs.google.com/presentation/d/1Zz3tMyjvQufpL28Xpg46TWHZx77IytMGPCK1t1HwYm8/edit#slide=id.p) for full results and analysis.
 
 ## Navigation
 - data_analysis folder contains all jupyter notebooks used to process data and create visulizations.
